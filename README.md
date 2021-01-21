@@ -20,18 +20,15 @@ git clone https://github.com/saurabhshcs/spring-data-example.git
 
 ## Local environment
 
-In order to run the Integration tests a Postgres database is required.
+In order to run the Integration tests a MySQL database is required.
 
-In order to run this service locally, an ActiveMQ service is required. 
+In order to run this service locally, an RabbitMQ service is required. 
 
-Create Postgres database and ActiveMQ service with docker-compose:
+Create MySQL database and RabbitMQ service with docker-compose:
  
 ```
 docker-compose up -d
 ```
-
-This will install and setup Postgres database with correct database name, username and password,
-likewise for ActiveMQ.
 
 ### Running service for the first time
 In order to force the download of dependencies outside of IntelliJ:
